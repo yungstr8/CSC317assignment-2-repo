@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Two | My Static Website</title>
-    <link rel="icon" href="../resources/favicon.svg" type="image/svg+xml">
+    <title>Favorite Coding Resources</title>
     <style>
+        /* Global styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #f2f2f2; /* Light grey background */
-            color: #333; /* Dark text for contrast */
-        }
-
-        header {
-            background-color: #ff2400; /* Scarlet red background */
+            background-color: #333333; /* Dark Grey Background */
             color: white;
-            padding: 20px;
-            border-bottom: 2px solid #ffffff; /* White border at bottom */
         }
 
+        /* SVG Banner styles */
+        svg {
+            width: 100%;
+            height: 300px;
+            display: block;
+        }
+
+        /* Navigation styles */
         nav ul {
-            display: flex;
-            justify-content: center;
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #ff2400; /* Scarlet Red */
         }
 
         nav ul li {
@@ -37,48 +37,98 @@
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 18px;
         }
 
-        section {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            border: 2px solid #ffffff; /* White border around section */
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
-        footer {
-            background-color: #ff2400; /* Scarlet red background */
-            color: white;
-            text-align: center;
+        /* Table styles */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ff2400; /* Scarlet Red Borders */
+        }
+
+        th, td {
             padding: 10px;
-            border-top: 2px solid #ffffff; /* White border at top */
+            text-align: left;
         }
 
-        p {
-            margin: 0;
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff2400; /* Scarlet Red Caption */
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            color: #ff2400; /* Scarlet Red Headings */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Page Two</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="three.html">Page Three</a></li>
-            </ul>
-        </nav>
-    </header>
 
+    <!-- Custom SVG Banner with Three Circles -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30" preserveAspectRatio="none">
+        <!-- Rectangle as background -->
+        <rect x="0" y="0" width="100" height="30" fill="#f2f2f2" stroke="#ff2400" stroke-width="1"/>
+        <!-- Three Red Circles -->
+        <circle cx="20" cy="15" r="4" fill="#ff2400"/>
+        <circle cx="50" cy="15" r="4" fill="#ff2400"/>
+        <circle cx="80" cy="15" r="4" fill="#ff2400"/>
+    </svg>
+
+    <!-- Navigation Menu -->
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="two.html">Page Two</a></li>
+            <li><a href="three.html">Page Three</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content: Favorite Coding Resources -->
     <section>
-        <p>Welcome to Page Two. Here we can include some information or content relevant to this page.</p>
+        <h1>Favorite Coding Resources</h1>
+
+        <!-- Table with Favorite Coding Resources -->
+        <table>
+            <caption>My Top 3 Coding Resources</caption>
+            <thead>
+                <tr>
+                    <th>Resource Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://developer.mozilla.org/">MDN Web Docs</a></td>
+                    <td>Comprehensive documentation for web developers, including HTML, CSS, and JavaScript.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/">W3Schools</a></td>
+                    <td>A great resource for beginner and intermediate web developers, offering tutorials and references.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://stackoverflow.com/">Stack Overflow</a></td>
+                    <td>A large community of developers helping each other solve coding issues with Q&A format.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <footer>
-        <p>&copy; 2024 My Static Website</p>
-    </footer>
 </body>
 </html>
 
