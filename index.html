@@ -3,47 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My SVG Banner</title>
+    <title>Assignment 2</title>
     <style>
+        /* Global styles */
         body {
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333333; /* Dark Grey Background */
+            color: white;
         }
 
+        /* SVG Banner styles */
         svg {
             width: 100%;
             height: 300px;
-            display: block; /* Ensures no white space around the SVG */
+            display: block;
         }
 
-        header {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #ff2400; /* Scarlet Red */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
             color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+        }
+
+        /* Headings */
+        h1, h2 {
+            text-align: center;
+            color: #ff2400; /* Scarlet Red Headings */
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Code styling */
+        code {
+            background-color: #444;
+            padding: 2px 4px;
+            border-radius: 3px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Static Website</h1>
-    </header>
-
     <!-- Custom SVG Banner -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30" preserveAspectRatio="none">
-        <!-- Rectangle -->
+        <!-- Rectangle as background -->
         <rect x="0" y="0" width="100" height="30" fill="#f2f2f2" stroke="#ff2400" stroke-width="1"/>
-
-        <!-- Circle -->
-        <circle cx="25" cy="15" r="5" fill="#ff2400"/>
-
-        <!-- Polygon (Triangle) -->
-        <polygon points="75,5 85,25 65,25" fill="#ff2400"/>
+        <!-- Red Circle -->
+        <circle cx="25" cy="15" r="4" fill="#ff2400"/>
+        <!-- Red Triangle (Polygon) -->
+        <polygon points="70,10 80,25 60,25" fill="#ff2400"/>
     </svg>
 
-    <section>
-        <p>This is the content of the page below the banner.</p>
-    </section>
+    <!-- Navigation Menu -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="views/two.html">Page Two</a></li>
+            <li><a href="views/three.html">Page Three</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content for Assignment 2 -->
+    <h1>Assignment 2</h1>
+
+    <h2 class="css-question">How to Apply CSS to HTML</h2>
+    <p class="css-question">
+        To include an external CSS file in an HTML file, use the following code:
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.
+    </p>
+
+    <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
+    <p class="js-question">
+        To include an external JavaScript file in an HTML file, use the following code:
+        <code>&lt;script src="app.js"&gt;&lt;/script&gt;</code>.
+    </p>
 
 </body>
 </html>
