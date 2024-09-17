@@ -1,13 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
+    <title>Home | My Static Website</title>
+    <link rel="icon" href="resources/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f2f2f2; /* Light grey background */
+            color: #333; /* Dark text for contrast */
+        }
+
+        header {
+            background-color: #ff2400; /* Scarlet red background */
+            color: white;
+            padding: 20px;
+            border-bottom: 2px solid #ffffff; /* White border at bottom */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ff2400; /* Scarlet red background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid #ffffff; /* White border at top */
+        }
+
+        /* Add white borders around sections */
+        section {
+            border: 2px solid #ffffff; /* White border */
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Static Website</h1>
-    <p>This is the home page.</p>
+    <header>
+        <h1>Welcome to My Assignment and my Website</h1>
+        <nav>
+            <ul>
+                <li><a href="views/two.html">Page Two</a></li>
+                <li><a href="views/three.html">Page Three</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <p>This is the homepage of my website. Use the navigation links above to visit other pages.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Static Website</p>
+    </footer>
 </body>
 </html>
